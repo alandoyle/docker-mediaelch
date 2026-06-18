@@ -1,0 +1,16 @@
+---
+services:
+  mediaelch-app:
+    image: alandoyle/mediaelch:latest
+    container_name: mediaelch
+    ports:
+      - 80:8080  # If you want to go MediaElch through a browser
+      - 5900:5900  # If you want to use a VNC client instead of the browser
+    volumes:
+      - /Storage/Incoming:/media
+      - ./config:/config
+    environment:
+      - RESOLUTION=1600x900
+      # - VNC_PASSWORD=8charpwd
+    restart: always
+    shm_size: "1gb"
