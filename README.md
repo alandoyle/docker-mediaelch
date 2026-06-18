@@ -3,13 +3,16 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/alandoyle/mediaelch?label=Pulls&logo=docker&style=for-the-badge)](https://hub.docker.com/r/alandoyle/mediaelch)
 [![Source](https://img.shields.io/badge/Source-GitHub-blue?logo=github&style=for-the-badge)](https://github.com/alandoyle/docker-mediaelch)
 
-This is a Docker container for [MediaElch](https://mediaelch.org/).
+This is a Docker container for [MediaElch](https://www.mediaelch.de/mediaelch/).
+
+The graphical user interface (GUI) of the application can be accessed through a
+modern web browser, requiring no installation or configuration on the client.
 
 ---
 
-[![MediaElch logo](https://images.weserv.nl/?url=raw.githubusercontent.com/alandoyle/docker-mediaelch/main/MediaElch-logo.svg&w=420)](https://mediaelch.org/)
+[![MediaElch logo](https://images.weserv.nl/?url=raw.githubusercontent.com/alandoyle/docker-mediaelch/main/MediaElch-logo.png&w=110)](https://www.mediaelch.de/mediaelch/)[![MediaElch](https://images.placeholders.dev/?width=256&height=110&fontFamily=monospace&fontWeight=400&fontSize=52&text=MediaElch&bgColor=rgba(0,0,0,0.0)&textColor=rgba(121,121,121,1))](https://www.mediaelch.de/mediaelch/)
 
-A lightweight MediaElch Docker image based on Alpine Linux, featuring a VNC server accessible on port `5900` and an HTML5-based noVNC client available on port `8080`.
+MediaElch is a MediaManager for Kodi. Information about Movies, TV Shows, Concerts and Music are stored as NFO files. Fanarts are downloaded automatically from fanart.tv.
 
 ---
 

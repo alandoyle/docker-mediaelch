@@ -18,6 +18,12 @@ RUN ln -s /usr/share/novnc/vnc_lite.html /usr/share/novnc/index.html
 # Add files.
 COPY rootfs/ /
 
+# Dos2Unix all files
+RUN dos2unix /entry.sh
+RUN dos2unix /etc/supervisord.conf
+RUN dos2unix /etc/openbox/main-window-selection.xml
+
+# Make entrypoint executable
 RUN chmod +x /entry.sh
 
 ENV DISPLAY=:0
