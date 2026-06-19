@@ -21,7 +21,7 @@ COPY rootfs/ /
 # Dos2Unix all files
 RUN dos2unix /entry.sh
 RUN dos2unix /etc/supervisord.conf
-RUN dos2unix /etc/openbox/main-window-selection.xml
+RUN dos2unix /etc/xdg/openbox/rc.xml
 
 # Make entrypoint executable
 RUN chmod +x /entry.sh
